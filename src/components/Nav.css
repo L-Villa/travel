@@ -1,4 +1,4 @@
-header {
+.header-wrapper {
   position: relative;
   display: flex;
   width: 1136px;
@@ -54,4 +54,44 @@ header a:hover {
 .hamburger:hover .line.half {
   width: 20px;
   margin-left: 0px;
+}
+
+.hidden-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--color-dark);
+  height: 100vh;
+  min-width: 450px;
+  max-width: 100%;
+  z-index: 3;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.close-hidden-menu {
+  color: var(--color-light);
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 6rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.close-hidden-menu:hover {
+  transform: rotate(90deg);
+}
+
+.hidden-menu-text-container {
+  background: var(--color-dark-accent);
+  width: 1px;
+  margin: 4rem;
+  padding: 1rem;
+}
+
+.hidden-menu-text-container a .nav-link {
+  color: var(--color-light);
+  font-size: 3rem;
+  margin: 1rem;
 }

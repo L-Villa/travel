@@ -1,0 +1,57 @@
+header {
+  position: relative;
+  display: flex;
+  width: 1136px;
+  margin: auto;
+  height: 90px;
+  align-items: center;
+  font-family: var(--font-primary);
+}
+
+.logo-container {
+  margin: 0 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  margin: 0 30px;
+}
+
+nav > a,
+nav > div {
+  margin-left: 70px;
+}
+
+header a:hover {
+  opacity: 0.5;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  height: 2px;
+  width: 20px;
+  background: var(--color-dark);
+  margin: 2px 0;
+  transition: all 0.3s;
+}
+
+.line.half {
+  width: 10px;
+  margin-left: 10px;
+}
+
+.hamburger:hover .line.half {
+  width: 20px;
+  margin-left: 0px;
+}

@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Vollkorn:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-primary: "Vollkorn", serif;
+  --font-secondary: "Open Sans", sans-serif;
+
+  --color-dark: rgb(20, 20, 20);
+  --color-light: rgb(255, 255, 255);
+  --color-light-accent: rgb(204, 204, 204);
+  --color-dark-accent: rgb(105, 105, 105);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-thumb {
+  background: #888;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+a,
+a:active,
+a:focus {
+  text-decoration: none;
+  outline: none;
+  color: var(--color-dark);
+}
+
+a:visited {
+  color: var(--color-dark);
+}
+
+body {
+  font-family: var(--font-primary);
+  text-decoration: none;
+}
+
+.stop-scrolling {
+  overflow: hidden;
+}
+
+p {
+  font-family: var(--font-secondary);
+  color: var(--color-dark-accent);
 }

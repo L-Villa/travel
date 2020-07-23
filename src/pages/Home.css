@@ -1,7 +1,5 @@
 .home-landing {
   position: relative;
-  background: url("../images/mountain.jpg");
-  background: url("../images/mountain2.png");
   background: url("../images/mountain3.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,7 +11,6 @@
   position: absolute;
   top: 20%;
   left: 50%;
-  width: 800px;
   width: clamp(300px, 50%, 800px);
   transform: translate(-50%, -50%);
   text-align: left;

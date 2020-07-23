@@ -37,8 +37,7 @@ export default function Home() {
       <section className="recent-trips">
         <h2>Recent Trips</h2>
         <div className="recent-trips-card-container">
-          {/* <link rel="stylesheet" href=""/> */}
-          <Link to="/newYork">
+          <Link to="/newyork">
             <div className="recent-trips-card">
               <div className="recent-trips-card-text-container">
                 <h2>New York</h2>

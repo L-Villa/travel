@@ -379,7 +379,8 @@ Recent Trips
   display: flex;
   flex-direction: row;
   width: 800px;
-  width: clamp(400px, 50vw, 800px);
+  width: clamp(400px, 70vw, 800px);
+  background: blue;
   flex-wrap: wrap;
 }
 
@@ -483,11 +484,11 @@ input:focus {
   .home-landing {
     background-position-y: 50px;
   }
+}
+@media screen and (max-width: 750px) {
   .rating:nth-of-type(odd) {
     margin-right: 0px;
   }
-}
-@media screen and (max-width: 750px) {
   .home-landing-text-container {
     top: 40%;
   }

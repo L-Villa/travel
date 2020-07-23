@@ -380,7 +380,6 @@ Recent Trips
   flex-direction: row;
   width: 800px;
   width: clamp(400px, 70vw, 800px);
-  background: blue;
   flex-wrap: wrap;
 }
 

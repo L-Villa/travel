@@ -103,26 +103,28 @@ export default function Home() {
         </div>
       </section>
       <section className="info-banner-2">
-        <div className="info-banner-text-container">
-          <h2>This trip will be the best</h2>
-          <p>
-            In travel and after it, as a rule, there is an increase in the
-            general vitality and ability to resist the external pressure of the
-            environment. The need to solve everyday road problems contributes to
-            the development of practical intelligence.
-          </p>
-        </div>
-        <div className="info-banner-card-number-container">
-          <div className="info-banner-card-number">
-            <h2>1350</h2>
-            <p>Trips</p>
+        <div className="info-banner-2-wrapper">
+          <div className="info-banner-text-container">
+            <h2>This trip will be the best</h2>
+            <p>
+              In travel and after it, as a rule, there is an increase in the
+              general vitality and ability to resist the external pressure of
+              the environment. The need to solve everyday road problems
+              contributes to the development of practical intelligence.
+            </p>
           </div>
-          <div className="info-banner-card-number">
-            <h2>1997</h2>
-            <p>Happy Customers</p>
+          <div className="info-banner-card-number-container">
+            <div className="info-banner-card-number">
+              <h2>1350</h2>
+              <p>Trips</p>
+            </div>
+            <div className="info-banner-card-number">
+              <h2>1997</h2>
+              <p>Happy Customers</p>
+            </div>
           </div>
+          <div className="info-banner-card-container"></div>
         </div>
-        <div className="info-banner-card-container"></div>
       </section>
       <section className="info-banner">
         <div className="info-banner-text-container">

@@ -235,10 +235,13 @@ Recent Trips
 
 .info-banner-2 {
   background: var(--color-dark);
+}
+.info-banner-2-wrapper {
   color: var(--color-light);
   padding-top: 3rem;
   padding-bottom: 5rem;
   width: clamp(200px, 100%, 1136px);
+  margin: 0 auto;
 }
 .info-banner-2 p {
   color: var(--color-light-accent);
@@ -532,7 +535,7 @@ footer p {
   justify-content: center;
 }
 .socials-container img {
-  cursor: pointer;;
+  cursor: pointer;
   height: 40px;
   margin: 0.7rem 0.5rem;
 }

@@ -83,11 +83,10 @@ Recent Trips
 
 .recent-trips-card-container {
   display: flex;
-  justify-content: space-evenly;
-  width: clamp(200px, 100%, 1136px);
+  justify-content: space-between;
+  width: clamp(200px, 85%, 950px);
   margin-top: 1rem;
-  padding-bottom: 6rem;
-  border-bottom: 2px dotted black;
+  margin-bottom: 5rem;
 }
 .recent-trips-card {
   position: relative;
@@ -162,7 +161,7 @@ Recent Trips
 }
 .recent-trips-card-container:hover .recent-trips-card,
 .recent-trips-card-container:focus .recent-trips-card {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .recent-trips-card-container:hover .recent-trips-card:hover,
 .recent-trips-card-container:focus .recent-trips-card:focus {
@@ -184,6 +183,7 @@ Recent Trips
   flex-direction: column;
   padding-top: 3rem;
   padding-bottom: 5rem;
+  border-top: 2px dotted black;
 }
 
 .info-banner-text-container {
@@ -480,64 +480,6 @@ input {
 
 input:focus {
   border-color: var(--color-dark-accent);
-}
-
-footer {
-  background: black;
-  padding-top: 4rem;
-  padding-bottom: 5rem;
-}
-footer h2 {
-  color: var(--color-light);
-  font-size: 1.4rem;
-}
-footer p {
-  color: var(--color-light-accent);
-}
-
-.footer-wrapper {
-  width: clamp(200px, 100%, 1136px);
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-}
-.company-info,
-.company-contact,
-.footer-trips {
-  width: 250px;
-}
-
-.contact-detail {
-  display: flex;
-  align-items: center;
-}
-
-.footer-icon {
-  height: 25px;
-  width: 25px;
-  margin-right: 15px;
-}
-
-.footer-recent-trips-image-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.footer-recent-trips-image {
-  height: 75px;
-  width: 75px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-.socials-container {
-  display: flex;
-  justify-content: center;
-}
-.socials-container img {
-  cursor: pointer;
-  height: 40px;
-  margin: 0.7rem 0.5rem;
 }
 
 @media screen and (max-width: 1350px) {

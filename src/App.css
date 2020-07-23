@@ -63,4 +63,5 @@ p {
 
 b {
   color: var(--color-light-accent);
+  text-decoration: underline;
 }

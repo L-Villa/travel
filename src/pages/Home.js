@@ -254,7 +254,7 @@ export default function Home() {
         </div>
         <div className="info-banner-card-container"></div>
       </section>
-      <section className="contact-banner">
+      <section className="contact-banner" id="contact">
         <div className="wrapper">
           <div className="contact-container">
             <h2>Get In Touch With Us</h2>

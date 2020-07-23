@@ -10,28 +10,31 @@
 }
 
 .home-landing-text-container {
-  width: 800px;
   position: absolute;
   top: 20%;
   left: 50%;
+  width: 800px;
+  width: clamp(300px, 50%, 800px);
   transform: translate(-50%, -50%);
   text-align: left;
 }
 
 .home-landing-text-container h2 {
   font-size: 5rem;
+  font-size: clamp(2.5rem, 5vw, 5rem);
   line-height: 0.9;
   margin: 1.5rem 0;
 }
 .home-landing-text-container p {
   font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.1rem);
   margin-top: 0;
 }
 
 button {
   background: rgba(0, 0, 0, 0);
   border: 2px solid var(--color-dark);
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.4rem;
   border-radius: 50px;
   font-size: 1rem;
   transition: all 0.3s;
@@ -62,6 +65,10 @@ button:hover {
   font-size: 4rem;
 }
 
+/* -------------------
+Recent Trips
+---------------------- */
+
 .recent-trips {
   position: relative;
   display: flex;
@@ -72,12 +79,13 @@ button:hover {
 }
 .recent-trips h2 {
   font-size: 2.5rem;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
 }
 
 .recent-trips-card-container {
   display: flex;
   justify-content: space-evenly;
-  width: 1136px;
+  width: clamp(200px, 100%, 1136px);
   margin-top: 1rem;
   padding-bottom: 6rem;
   border-bottom: 2px dotted black;
@@ -85,14 +93,14 @@ button:hover {
 .recent-trips-card {
   position: relative;
   background: var(--color-light);
-  height: 350px;
-  width: 250px;
+  height: clamp(250px, 30vw, 350px);
+  width: clamp(178.57px, 21.43vw, 250px);
   transition: all 0.3s;
 }
 .recent-trips-card::after {
   content: " ";
-  height: 75px;
-  width: 50px;
+  height: clamp(60px, 5vw, 75px);
+  width: clamp(42.86px, 4vw, 50px);
   background: black;
   position: absolute;
   bottom: 30px;
@@ -105,8 +113,9 @@ button:hover {
   justify-content: center;
   align-items: center;
   font-size: 1.8rem;
-  height: 75px;
-  width: 50px;
+  height: clamp(60px, 5vw, 75px);
+  width: clamp(42.86px, 4vw, 50px);
+  /* height: clamp(75px); */
   background: black;
   position: absolute;
   z-index: 5;
@@ -126,12 +135,15 @@ button:hover {
   background: black;
   height: 75px;
   width: 60%;
+  height: clamp(60px, 5vw, 75px);
+  /* width: clamp(42.86px, 4vw, 50px); */
   padding: 0 1.5rem;
   z-index: 3;
   transition: all 0.3s;
 }
 .recent-trips-card-text-container h2 {
   font-size: 1.7rem;
+  font-size: clamp(1.3rem, 2vw, 1.7rem);
   margin: 0;
   color: var(--color-light);
 }
@@ -139,6 +151,7 @@ button:hover {
   font-size: 1.1rem;
   margin: 0;
   color: var(--color-light-accent);
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
 }
 .recent-trips-card img {
   position: absolute;
@@ -150,16 +163,20 @@ button:hover {
   transition: all 0.3s;
   object-fit: cover;
 }
-.recent-trips-card-container:hover .recent-trips-card {
+.recent-trips-card-container:hover .recent-trips-card,
+.recent-trips-card-container:focus .recent-trips-card {
   opacity: 0.5;
 }
-.recent-trips-card-container:hover .recent-trips-card:hover {
+.recent-trips-card-container:hover .recent-trips-card:hover,
+.recent-trips-card-container:focus .recent-trips-card:focus {
   opacity: 1;
 }
-.recent-trips-card:hover .recent-trips-card-text-container {
+.recent-trips-card:hover .recent-trips-card-text-container,
+.recent-trips-card:focus .recent-trips-card-text-container {
   width: 100%;
 }
-.recent-trips-card:hover::before {
+.recent-trips-card:hover::before,
+.recent-trips-card:focus::before {
   opacity: 1;
   left: 100%;
 }
@@ -351,7 +368,7 @@ button:hover {
   height: 100px;
   border-radius: 50%;
   position: relative;
-  background: url('../images/portrait1.png');
+  background: url("../images/portrait1.png");
   background-size: cover;
   background-position-y: -10px;
 }
@@ -507,4 +524,20 @@ footer p {
 .socials-container img {
   height: 40px;
   margin: 0.7rem 0.5rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .home-landing {
+    background-position-y: 50px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .home-landing-text-container {
+    top: 40%;
+  }
+  .recent-trips-card-container {
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+  }
 }

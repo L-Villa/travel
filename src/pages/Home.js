@@ -7,7 +7,7 @@ import foggyMountain from "../images/foggyMountain.png";
 import house from "../images/icons/house.png";
 import worldMap from "../images/icons/worldMap.png";
 import moneyBag from "../images/icons/moneyBag.png";
-import twitter from "../images/icons/twitter.png";
+import instagram from "../images/icons/instagram.png";
 import facebook from "../images/icons/facebook.png";
 import linkedin from "../images/icons/linkedin.png";
 import portrait2 from "../images/portrait2.png";
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
         {/* <div className="socials">
           <div className="social-link">Facebook</div>
-          <div className="social-link">Twitter</div>
+          <div className="social-link">instagram</div>
           <div className="social-link">LinkedIn</div>
         </div> */}
         <div className="scroll-down-indicator">↓</div>
@@ -131,7 +131,7 @@ export default function Home() {
             <div className="card-photo-icon">
               <img src={portrait4} alt="" />
               <div className="social-button-container">
-                <img src={twitter} alt="twitter" />
+                <img src={instagram} alt="instagram" />
                 <img src={linkedin} alt="linkedin" />
                 <img src={facebook} alt="facebook" />
               </div>
@@ -143,7 +143,7 @@ export default function Home() {
             <div className="card-photo-icon">
               <img src={portrait2} alt="" />
               <div className="social-button-container">
-                <img src={twitter} alt="twitter" />
+                <img src={instagram} alt="instagram" />
                 <img src={linkedin} alt="linkedin" />
                 <img src={facebook} alt="facebook" />
               </div>
@@ -155,7 +155,7 @@ export default function Home() {
             <div className="card-photo-icon">
               <img src={portrait3} alt="" />
               <div className="social-button-container">
-                <img src={twitter} alt="twitter" />
+                <img src={instagram} alt="instagram" />
                 <img src={linkedin} alt="linkedin" />
                 <img src={facebook} alt="facebook" />
               </div>

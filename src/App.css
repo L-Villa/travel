@@ -60,3 +60,7 @@ p {
   font-family: var(--font-secondary);
   color: var(--color-dark-accent);
 }
+
+b {
+  color: var(--color-light-accent);
+}

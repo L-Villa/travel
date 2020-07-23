@@ -1,7 +1,5 @@
 .location-name {
   position: relative;
-  height: 150vh;
-  height: 1900px;
   height: min(210vh, 1900px);
   background: var(--color-light);
   display: flex;
@@ -26,10 +24,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 5;
-  height: 70%;
-  width: 1136px;
-  height: 1200px;
-  height: min(40%, 1200px);
   height: min(130vw, 1200px);
   width: min(90%, 1136px);
   object-fit: cover;
@@ -42,8 +36,7 @@
   background: var(--color-dark);
   height: 55%;
   height: 950px;
-  height: max(75%, 950px);
-  height: max(65%, 950px);
+  height: max(50%, 950px);
 }
 .location-support-info-card-container {
   display: flex;
@@ -93,8 +86,8 @@
 }
 .experiences h2 {
   color: var(--color-light);
-  font-size: 5rem;
-  width: 500px;
+  font-size: clamp(3rem, 5vw, 5rem);
+  width: min(80%, 500px);
   margin: 3rem 2rem;
 }
 .p-container {
@@ -120,24 +113,18 @@
 }
 
 .experiences img {
-  height: 500px;
-  width: 800px;
   height: min(60%, 500px);
   width: min(95%, 800px);
   margin: 7rem auto;
   object-fit: cover;
 }
-/* .p-container b {
-  position: relative;
-  font-size: 4rem;
-  top: 10px;
-  color: white;
-  margin: 0;
-} */
 
 @media screen and (max-width: 800px) {
   .city-image-main {
     top: 28%;
+  }
+  .location-support-info {
+    height: max(65%, 950px);
   }
   .location-support-info-card-container {
     flex-direction: column;

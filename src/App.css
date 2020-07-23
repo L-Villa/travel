@@ -7,7 +7,10 @@
   --color-dark: rgb(20, 20, 20);
   --color-light: rgb(255, 255, 255);
   --color-light-accent: rgb(204, 204, 204);
-  --color-dark-accent: rgb(105, 105, 105);
+  --color-dark-accent: rgb(65, 65, 65);
+}
+html {
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {

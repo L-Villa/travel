@@ -6,7 +6,7 @@ import foggyMountain from "../images/foggyMountain.png";
 import phone from "../images/icons/phone.png";
 import locationMarker from "../images/icons/locationMarker.png";
 import clock from "../images/icons/clock.png";
-import twitter from "../images/icons/twitter.png";
+import instagram from "../images/icons/instagram.png";
 import facebook from "../images/icons/facebook.png";
 import linkedin from "../images/icons/linkedin.png";
 
@@ -39,7 +39,7 @@ export default function Footer() {
               <p>Mon - Sat 8:00 AM - 5:00 PM</p>
             </div>
             <div className="socials-container">
-              <img src={twitter} alt="twitter" />
+              <img src={instagram} alt="instagram" />
               <img src={linkedin} alt="linkedin" />
               <img src={facebook} alt="facebook" />
             </div>

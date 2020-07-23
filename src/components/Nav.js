@@ -8,6 +8,7 @@ export default function Nav() {
   function handleClick() {
     setHidden(!hidden);
   }
+
   return (
     <div>
       <header>
@@ -22,9 +23,9 @@ export default function Nav() {
             <Link to="/news">
               <div className="nav-link">News</div>
             </Link>
-            <Link to="/contact">
+            <a href="#contact">
               <div className="nav-link">Contact</div>
-            </Link>
+            </a>
             <div className="hamburger" onClick={handleClick}>
               <div className="line"></div>
               <div className="line half"></div>
@@ -45,20 +46,22 @@ export default function Nav() {
           </div>
           <div className="hidden-menu-text-container">
             <Link to="/about">
-              <div className="nav-link" onClick={handleClick}>
+              <div className="menu-link" onClick={handleClick}>
                 About
               </div>
             </Link>
             <Link to="/news">
-              <div className="nav-link" onClick={handleClick}>
+              <div className="menu-link" onClick={handleClick}>
                 News
               </div>
             </Link>
-            <Link to="/contact">
-              <div className="nav-link" onClick={handleClick}>
+            {/* <Link to="#contact"> */}
+            <a href="#contact">
+              <div className="menu-link" onClick={handleClick}>
                 Contact
               </div>
-            </Link>
+            </a>
+            {/* </Link> */}
           </div>
         </div>
       </header>

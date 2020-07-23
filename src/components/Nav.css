@@ -1,7 +1,7 @@
 .header-wrapper {
   position: relative;
   display: flex;
-  width: 1136px;
+  width: clamp(200px, 100%, 1136px);
   margin: auto;
   height: 90px;
   align-items: center;
@@ -57,14 +57,14 @@ header a:hover {
 }
 
 .hidden-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   background: var(--color-dark);
   height: 100vh;
   min-width: 450px;
   max-width: 100%;
-  z-index: 3;
+  z-index: 99;
   overflow: hidden;
   transition: all 0.3s;
 }
@@ -75,7 +75,7 @@ header a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 6rem;
+  margin: 6rem 4rem;
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -84,14 +84,24 @@ header a:hover {
 }
 
 .hidden-menu-text-container {
-  background: var(--color-dark-accent);
   width: 1px;
   margin: 4rem;
   padding: 1rem;
 }
 
-.hidden-menu-text-container a .nav-link {
+.menu-link {
   color: var(--color-light);
   font-size: 3rem;
   margin: 1rem;
+  transition: all 0.3s;
+}
+.menu-link:hover {
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 650px) {
+  .nav-link {
+    display: none;
+  }
 }

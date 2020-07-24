@@ -32,9 +32,11 @@ export default function Home() {
           <div className="social-link">instagram</div>
           <div className="social-link">LinkedIn</div>
         </div> */}
-        <div className="scroll-down-indicator">↓</div>
+        <a href="#recent-trips">
+          <div className="scroll-down-indicator">↓</div>
+        </a>
       </section>
-      <section className="recent-trips">
+      <section className="recent-trips" id="recent-trips">
         <h2>Recent Trips</h2>
         <div className="recent-trips-card-container">
           <Link to="/newyork">
@@ -254,7 +256,7 @@ export default function Home() {
       </section>
       <section className="contact-banner" id="contact">
         <div className="wrapper">
-          <div className="contact-container">
+          <form className="contact-container">
             <h2>Get In Touch With Us</h2>
             <p>We'll get back to you as soon as possible</p>
             <div className="input-container">
@@ -277,8 +279,8 @@ export default function Home() {
               <label htmlFor="what">Number Of Travelers</label>
               <input type="text" placeholder="How People Will Be Traveling" />
             </div>
-            <button>Submit</button>
-          </div>
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </section>
     </div>

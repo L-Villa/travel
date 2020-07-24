@@ -42,28 +42,23 @@ button:hover {
   color: var(--color-light);
 }
 
-.socials {
+.vertical-text {
   display: flex;
   position: absolute;
-  left: 0;
-  top: 50%;
-  transform: rotate(-90deg);
+  top: 40%;
+  font-size: 1rem;
 }
-.socials > div {
-  margin: 1rem;
+.vertical-text > div {
+  margin: 0 1.5rem;
 }
-
-/* .socials {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 0;
+.vertical-text.left-side {
+  left: -120px;
   transform: translate(0, -50%) rotate(-90deg);
 }
-
-.socials > div {
-  margin-left: 70px;
-} */
+.vertical-text.right-side {
+  right: -140px;
+  transform: translate(0, -50%) rotate(90deg);
+}
 
 .scroll-down-indicator {
   position: absolute;
@@ -512,6 +507,9 @@ input:focus {
   }
   .home-landing-text-container {
     top: 40%;
+  }
+  .vertical-text {
+    display: none;
   }
   .recent-trips-card-container {
     flex-direction: column;

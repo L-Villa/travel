@@ -27,11 +27,26 @@ export default function Home() {
           </p>
           <button>Start Searching</button>
         </div>
-        {/* <div className="socials">
-          <div className="social-link">Facebook</div>
-          <div className="social-link">instagram</div>
-          <div className="social-link">LinkedIn</div>
-        </div> */}
+        <div className="vertical-text left-side">
+          <div>
+            <a href="#">facebook</a>
+          </div>
+          <div>
+            <a href="#">instagram</a>
+          </div>
+          <div>
+            <a href="#">linkedin</a>
+          </div>
+        </div>
+        <div className="vertical-text right-side">
+          <div>
+            <a href="#">123-555-0000</a>
+          </div>
+          <div>/</div>
+          <div>
+            <a href="#">travel@travel.com</a>
+          </div>
+        </div>
         <a href="#recent-trips">
           <div className="scroll-down-indicator">↓</div>
         </a>

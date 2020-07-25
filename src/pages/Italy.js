@@ -1,52 +1,52 @@
 import React, { useState, useEffect } from "react";
 import "./NewYork.css";
-import goldenGateSide from "../images/california/goldenGateSideFoggy.png";
-import beach from "../images/california/beach.png";
-import yosemite from "../images/california/yosemite.png";
-import disneyland from "../images/california/disneyland.png";
-import goldenGate from "../images/california/goldenGate.png";
-import sequoia from "../images/california/sequoia.png";
-import santaMonica from "../images/california/santaMonica.png";
+import foggyMountain from "../images/italy/foggyMountain.png";
+import italyLong from "../images/italy/italyLong.png";
+import bridgeOfSighs from "../images/italy/bridgeOfSighs.png";
+import colosseum from "../images/italy/colosseum.png";
+import leaningTowerOfPisa from "../images/italy/leaningTowerOfPisa.png";
+import cinqueTerre from "../images/italy/cinqueTerre.png";
+import davidOfMichelangelo from "../images/italy/davidOfMichelangelo.png";
 
 export default function NewYork() {
   const [state, setState] = useState([
     {
       description:
-        "Yosemite National Park is an American national park located in the western Sierra Nevada of Central California and covers an area of 748,436 acres.",
+        "The Bridge of Sighs is a bridge in Venice, Italy. The enclosed bridge passes over the Rio di Palazzo and was built in 1600.",
       active: true,
       visible: false,
-      image: yosemite,
+      image: bridgeOfSighs,
     },
     {
       description:
-        "Disneyland Park, originally Disneyland, is the first of two theme parks built at the Disneyland Resort in Anaheim, California, opened on July 17, 1955.",
+        "The Colosseum is an oval amphitheatre in the centre of the city of Rome. The largest amphitheatre ever built at the time and held 50,000 to 80,000 spectators.",
       active: false,
       visible: false,
-      image: disneyland,
+      image: colosseum,
     },
     {
       description:
-        "The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide strait connecting San Francisco Bay and the Pacific Ocean.",
+        "The Leaning Tower of Pisa is the campanile of the cathedral of the Italian city of Pisa, known worldwide for its nearly four-degree lean, the result of an unstable foundation.",
       active: false,
       visible: false,
-      image: goldenGate,
+      image: leaningTowerOfPisa,
     },
     {
       description:
-        "Sequoia National Park is an American national park that protects 404,064 acres of forested mountainous terrain and contains the highest point in the contiguous United States, Mount Whitney",
+        "The Cinque Terre is a coastal area within Liguria, in the northwest of Italy, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and Riomaggiore.",
       active: false,
       visible: false,
-      image: sequoia,
+      image: cinqueTerre,
     },
     {
       description:
-        "The Santa Monica Pier is a large double-jointed pier that contains a small amusement park, concession stands, and areas for views and fishing.",
+        "David of Michelangelo is a 5.17-metre marble statue of the Biblical figure David, a favoured subject in the art of Florence, created between 1501 and 1504.",
       active: false,
       visible: false,
-      image: santaMonica,
+      image: davidOfMichelangelo,
     },
   ]);
-  const [smallImage, setSmallImage] = useState(yosemite);
+  const [smallImage, setSmallImage] = useState(bridgeOfSighs);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -89,10 +89,10 @@ export default function NewYork() {
   return (
     <div>
       <section className="location-name">
-        <h2>California</h2>
+        <h2>Italy</h2>
         <img
           className="city-image-main"
-          src={goldenGateSide}
+          src={foggyMountain}
           alt="Statue of Liberty"
         />
         <div className="location-support-info">
@@ -124,7 +124,7 @@ export default function NewYork() {
       <section className="experiences">
         <div className="experiences-wrapper">
           <h2>
-            Catchy <br></br> <b>California</b> <br></br> Experiences
+            Catchy <br></br> <b>Italy</b> <br></br> Experiences
           </h2>
           <div className="p-container">
             <p className="p-container-first">
@@ -144,13 +144,13 @@ export default function NewYork() {
               maiores modi quos, mollitia at repudiandae!
             </p>
           </div>
-          <img src={beach} alt="top of the rock" />
+          <img src={italyLong} alt="top of the rock" />
         </div>
       </section>
       <section className="experiences">
         <div className="experiences-wrapper">
           <h2>
-            Things <br></br> To See In <br></br> <b>California</b>
+            Things <br></br> To See In <br></br> <b>Italy</b>
           </h2>
           <div className="things-to-see-container">
             <img src={smallImage} alt="top of the rock" />

@@ -3,7 +3,7 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import statueOfLibertyFoggy from "../images/newYork/statueOfLibertyFoggy.jpg";
 import goldenGateSide from "../images/california/goldenGateFront.png";
-import foggyMountain from "../images/foggyMountain.png";
+import foggyMountain from "../images/italy/foggyMountain.png";
 import house from "../images/icons/house.png";
 import worldMap from "../images/icons/worldMap.png";
 import moneyBag from "../images/icons/moneyBag.png";

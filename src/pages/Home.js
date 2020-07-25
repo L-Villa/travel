@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import statueOfLibertyFoggy from "../images/newYork/statueOfLibertyFoggy.jpg";
-import goldenGateSide from "../images/goldenGateSide2.png";
+import goldenGateSide from "../images/california/goldenGateFront.png";
 import foggyMountain from "../images/foggyMountain.png";
 import house from "../images/icons/house.png";
 import worldMap from "../images/icons/worldMap.png";

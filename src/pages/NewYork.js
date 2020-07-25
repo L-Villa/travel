@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./NewYork.css";
 import statueOfLibertyFoggy from "../images/newYork/statueOfLibertyFoggy.jpg";
 import empireStateBuilding from "../images/newYork/empireStateBuilding.jpg";
@@ -46,6 +46,10 @@ export default function NewYork() {
     },
   ]);
   const [smallImage, setSmallImage] = useState(empireStateBuilding);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleMouseOver = (index) => {
     let descriptionState = state.map((description, ii) => {

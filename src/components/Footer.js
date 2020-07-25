@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import statueOfLibertyFoggy from "../images/newYork/statueOfLibertyFoggy.jpg";
-import goldenGateSide from "../images/goldenGateSide2.png";
+import goldenGateSide from "../images/california/goldenGateFront.png";
 import foggyMountain from "../images/foggyMountain.png";
 import phone from "../images/icons/phone.png";
 import locationMarker from "../images/icons/locationMarker.png";

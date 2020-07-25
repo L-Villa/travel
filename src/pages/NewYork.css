@@ -162,6 +162,47 @@
   opacity: 1;
 }
 
+.table-1-col-4-row {
+  background: var(--color-dark);
+  padding-top: 2rem;
+  padding-bottom: 7rem;
+}
+.table-wrapper {
+  width: 1136px;
+  width: min(85%, 1136px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.table-row {
+  display: flex;
+  width: 700px;
+  width: min(100%, 700px);
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--color-dark-accent);
+  justify-content: space-between;
+}
+.table-row:first-of-type {
+  border-top: 1px solid var(--color-dark-accent);
+}
+.table-row h2 {
+  color: var(--color-light);
+  font-size: 2rem;
+  font-weight: 400;
+}
+.btn-white-fill-sq-md {
+  background: var(--color-light);
+  border-radius: 0;
+  margin: 5rem;
+  cursor: pointer;
+}
+.btn-white-fill-sq-md:hover {
+  background: var(--color-light-accent);
+  color: var(--color-dark);
+}
+
 @media screen and (max-width: 800px) {
   .city-image-main {
     top: 28%;

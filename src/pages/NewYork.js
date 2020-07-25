@@ -48,38 +48,38 @@ export default function NewYork() {
   const [smallImage, setSmallImage] = useState(empireStateBuilding);
 
   const handleMouseOver = (index) => {
-    let dts = state.map((dot, ii) => {
+    let descriptionState = state.map((description, ii) => {
       if (index === ii) {
-        dot.visible = true;
+        description.visible = true;
       }
-      return dot;
+      return description;
     });
-    setState(dts);
+    setState(descriptionState);
   };
 
   const handleMouseLeave = (index) => {
-    let dts = state.map((dot, ii) => {
+    let descriptionState = state.map((description, ii) => {
       if (index === ii) {
-        dot.visible = false;
+        description.visible = false;
       }
-      return dot;
+      return description;
     });
-    setState(dts);
+    setState(descriptionState);
   };
 
   const handleClick = (index) => {
-    let dts = state.map((dot, ii) => {
+    let descriptionState = state.map((description, ii) => {
       if (index === ii) {
-        dot.active = true;
-        dot.visible = false;
+        description.active = true;
+        description.visible = false;
       } else {
-        dot.active = false;
+        description.active = false;
       }
-      return dot;
+      return description;
     });
     const currentSmallImage = state[index].image;
     setSmallImage(currentSmallImage);
-    setState(dts);
+    setState(descriptionState);
   };
   return (
     <div>

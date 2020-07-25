@@ -172,17 +172,14 @@ export default function NewYork() {
       <section className="table-1-col-4-row">
         <div className="table-wrapper">
           <div className="table-row">
-            {/* <p></p> */}
             <h2>10 Days Trip + Breakfast</h2>
             <h2>$ 1500</h2>
           </div>
           <div className="table-row">
-            {/* <p></p> */}
             <h2>7 Days Trip + Breakfast</h2>
             <h2>$ 1000</h2>
           </div>
           <div className="table-row">
-            {/* <p></p> */}
             <h2>4 Days Trip + Breakfast</h2>
             <h2>$ 500</h2>
           </div>

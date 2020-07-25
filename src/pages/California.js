@@ -54,7 +54,7 @@ export default function NewYork() {
 
   const handleMouseOver = (index) => {
     let descriptionState = state.map((description, ii) => {
-      if (index === ii) {
+      if (index === ii && description.active === false) {
         description.visible = true;
       }
       return description;
@@ -158,8 +158,10 @@ export default function NewYork() {
               {state.map((div, index) => (
                 <p
                   className={
-                    state[index].visible || state[index].active
+                    state[index].visible
                       ? "default-p hovered-p"
+                      : "default-p" && state[index].active
+                      ? "default-p active-p"
                       : "default-p"
                   }
                   onClick={() => handleClick(index)}
@@ -177,15 +179,15 @@ export default function NewYork() {
       <section className="table-1-col-4-row">
         <div className="table-wrapper">
           <div className="table-row">
-            <h2>10 Days Trip + Breakfast</h2>
+            <h2>10 Days Trip  +  Breakfast</h2>
             <h2>$ 1500</h2>
           </div>
           <div className="table-row">
-            <h2>7 Days Trip + Breakfast</h2>
+            <h2>7 Days Trip  +  Breakfast</h2>
             <h2>$ 1000</h2>
           </div>
           <div className="table-row">
-            <h2>4 Days Trip + Breakfast</h2>
+            <h2>4 Days Trip  +  Breakfast</h2>
             <h2>$ 500</h2>
           </div>
           <button className="btn-white-fill-sq-md">Book Now</button>

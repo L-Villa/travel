@@ -53,7 +53,7 @@ export default function NewYork() {
 
   const handleMouseOver = (index) => {
     let descriptionState = state.map((description, ii) => {
-      if (index === ii) {
+      if (index === ii && description.active === false) {
         description.visible = true;
       }
       return description;
@@ -157,8 +157,10 @@ export default function NewYork() {
               {state.map((div, index) => (
                 <p
                   className={
-                    state[index].visible || state[index].active
+                    state[index].visible
                       ? "default-p hovered-p"
+                      : "default-p" && state[index].active
+                      ? "default-p active-p"
                       : "default-p"
                   }
                   onClick={() => handleClick(index)}

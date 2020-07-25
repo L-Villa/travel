@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import statueOfLiberty from "../images/statueOfLiberty.jpg";
+import statueOfLibertyFoggy from "../images/newYork/statueOfLibertyFoggy.jpg";
 import goldenGateSide from "../images/goldenGateSide2.png";
 import foggyMountain from "../images/foggyMountain.png";
 import phone from "../images/icons/phone.png";
@@ -49,7 +49,7 @@ export default function Footer() {
             <div className="footer-recent-trips-image-container">
               <img
                 className="footer-recent-trips-image"
-                src={statueOfLiberty}
+                src={statueOfLibertyFoggy}
                 alt=""
               />
               <img
@@ -74,7 +74,7 @@ export default function Footer() {
               />
               <img
                 className="footer-recent-trips-image"
-                src={statueOfLiberty}
+                src={statueOfLibertyFoggy}
                 alt=""
               />
             </div>

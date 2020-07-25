@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import statueOfLiberty from "../images/statueOfLiberty.jpg";
+import statueOfLibertyFoggy from "../images/newYork/statueOfLibertyFoggy.jpg";
 import goldenGateSide from "../images/goldenGateSide2.png";
 import foggyMountain from "../images/foggyMountain.png";
 import house from "../images/icons/house.png";
@@ -60,7 +60,7 @@ export default function Home() {
                 <h2>New York</h2>
                 <p>New York City</p>
               </div>
-              <img src={statueOfLiberty} alt="Statue of Liberty" />
+              <img src={statueOfLibertyFoggy} alt="Statue of Liberty" />
             </div>
           </Link>
           <Link to="/california">

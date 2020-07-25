@@ -126,16 +126,17 @@
   padding: 1rem;
   justify-content: center;
   width: min(90%, 800px);
-  margin: 0 auto;
+  align-items: center;
+  margin: 5rem auto;
 }
 .things-to-see-container img {
-  height: 500px;
-  width: 350px;
+  height: 650px;
+  width: 400px;
   margin: 0 1rem;
   object-fit: cover;
 }
 .location-description-container {
-  height: 500px;
+  height: 650px;
   width: 350px;
   display: flex;
   flex-direction: column;

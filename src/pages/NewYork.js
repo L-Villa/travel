@@ -1,42 +1,51 @@
 import React, { useState } from "react";
 import "./NewYork.css";
-import statueOfLiberty from "../images/statueOfLiberty.jpg";
-import topOfTheRock from "../images/topOfTheRock.jpg";
+import statueOfLibertyFoggy from "../images/newYork/statueOfLibertyFoggy.jpg";
+import empireStateBuilding from "../images/newYork/empireStateBuilding.jpg";
+import centralPark from "../images/newYork/centralPark.png";
+import statueOfLiberty from "../images/newYork/statueOfLiberty.png";
+import timesSquare from "../images/newYork/timesSquare.png";
+import brooklynBridge from "../images/newYork/brooklynBridge.png";
 
 export default function NewYork() {
-  // const obj = [{description: "hello", active: false, visible: false}];
   const [state, setState] = useState([
     {
       description:
-        "This is the first location you should see as soon as possible",
+        "The Empire State Building is a 102-story Art Deco skyscraper in Midtown Manhattan in New York City.",
       active: true,
       visible: false,
+      image: empireStateBuilding,
     },
     {
       description:
-        "This is the first location you should see as soon as possible",
+        "Central Park is the fifth-largest park in the city by area, covering 843 acres. The park is the most visited urban park in the United States.",
       active: false,
       visible: false,
+      image: centralPark,
     },
     {
       description:
-        "This is the first location you should see as soon as possible",
+        "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor.",
       active: false,
       visible: false,
+      image: statueOfLiberty,
     },
     {
       description:
-        "This is the first location you should see as soon as possible",
+        "Times Square is a major commercial intersection, tourist destination, entertainment center, and neighborhood in the Midtown Manhattan section of New York City.",
       active: false,
       visible: false,
+      image: timesSquare,
     },
     {
       description:
-        "This is the first location you should see as soon as possible",
+        "The Brooklyn Bridge is a hybrid cable-stayed/suspension bridge in New York City, spanning the East River between the boroughs of Manhattan and Brooklyn.",
       active: false,
       visible: false,
+      image: brooklynBridge,
     },
   ]);
+  const [smallImage, setSmallImage] = useState(empireStateBuilding);
 
   const handleMouseOver = (index) => {
     let dts = state.map((dot, ii) => {
@@ -68,6 +77,8 @@ export default function NewYork() {
       }
       return dot;
     });
+    const currentSmallImage = state[index].image;
+    setSmallImage(currentSmallImage);
     setState(dts);
   };
   return (
@@ -76,7 +87,7 @@ export default function NewYork() {
         <h2>New York</h2>
         <img
           className="city-image-main"
-          src={statueOfLiberty}
+          src={statueOfLibertyFoggy}
           alt="Statue of Liberty"
         />
         <div className="location-support-info">
@@ -128,7 +139,7 @@ export default function NewYork() {
               maiores modi quos, mollitia at repudiandae!
             </p>
           </div>
-          <img src={topOfTheRock} alt="top of the rock" />
+          <img src={empireStateBuilding} alt="top of the rock" />
         </div>
       </section>
       <section className="experiences">
@@ -137,7 +148,7 @@ export default function NewYork() {
             Things <br></br> To See In <br></br> <b>New York</b>
           </h2>
           <div className="things-to-see-container">
-            <img src={topOfTheRock} alt="top of the rock" />
+            <img src={smallImage} alt="top of the rock" />
             <div className="location-description-container">
               {state.map((div, index) => (
                 <p

@@ -1,6 +1,6 @@
 .home-landing {
   position: relative;
-  background: url("../images/mountain3.png");
+  background: url("../images/mountain.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -32,7 +32,6 @@ button {
   background: rgba(0, 0, 0, 0);
   border: 2px solid var(--color-dark);
   padding: 0.8rem 1.4rem;
-  border-radius: 50px;
   font-size: 1rem;
   transition: all 0.3s;
   margin: 1rem 0;
@@ -342,7 +341,7 @@ Recent Trips
 }
 
 .image-divider {
-  background: url("../images/forrestMountain3.png");
+  background: url("../images/forrestMountain.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -387,7 +386,7 @@ Recent Trips
   width: clamp(40px, 10vw, 100px);
   border-radius: 50%;
   position: relative;
-  background: url("../images/portrait1.png");
+  background: url("../images/portraits/portrait1.png");
   background-size: cover;
   background-position-y: -10px;
 }
@@ -432,7 +431,7 @@ Recent Trips
 }
 
 .contact-banner {
-  background: url("../images/hawaii3.png");
+  background: url("../images/hawaii.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;

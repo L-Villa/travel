@@ -10,9 +10,9 @@ import moneyBag from "../images/icons/moneyBag.png";
 import instagram from "../images/icons/instagram.png";
 import facebook from "../images/icons/facebook.png";
 import linkedin from "../images/icons/linkedin.png";
-import portrait2 from "../images/portrait2.png";
-import portrait3 from "../images/portrait3.png";
-import portrait4 from "../images/portrait4.png";
+import portrait2 from "../images/portraits/portrait2.png";
+import portrait3 from "../images/portraits/portrait3.png";
+import portrait4 from "../images/portraits/portrait4.png";
 
 export default function Home() {
   return (

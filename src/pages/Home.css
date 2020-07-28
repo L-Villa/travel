@@ -3,13 +3,14 @@
   background: url("../images/mountain.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: 100px;
   width: 100%;
   height: 93vh;
 }
 
 .home-landing-text-container {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50%;
   width: clamp(300px, 50%, 800px);
   transform: translate(-50%, -50%);
@@ -98,7 +99,7 @@ Recent Trips
 .recent-trips-card-container {
   display: flex;
   justify-content: space-between;
-  width: clamp(200px, 85%, 950px);
+  width: clamp(200px, 87%, 950px);
   margin-top: 1rem;
   margin-bottom: 5rem;
 }
@@ -113,7 +114,7 @@ Recent Trips
   content: " ";
   height: clamp(60px, 5vw, 75px);
   width: clamp(42.86px, 4vw, 50px);
-  background: black;
+  background: var(--color-dark);
   position: absolute;
   bottom: 30px;
   left: 100%;
@@ -127,12 +128,11 @@ Recent Trips
   font-size: 1.8rem;
   height: clamp(60px, 5vw, 75px);
   width: clamp(42.86px, 4vw, 50px);
-  background: black;
+  background: var(--color-dark);
   position: absolute;
   z-index: 5;
   bottom: 30px;
-  left: 100%;
-  left: 75%;
+  left: 50%;
   opacity: 0;
   transition: all 0.2s;
 }
@@ -143,11 +143,11 @@ Recent Trips
   flex-direction: column;
   justify-content: center;
   bottom: 30px;
-  background: black;
+  background: var(--color-dark);
   height: 75px;
-  width: 60%;
+  width: 65%;
   height: clamp(60px, 5vw, 75px);
-  padding: 0 1.5rem;
+  padding-left: 1.5rem;
   z-index: 3;
   transition: all 0.3s;
 }
@@ -325,6 +325,7 @@ Recent Trips
   width: 40px;
   object-fit: cover;
   margin: 5px;
+  cursor: pointer;
 }
 .card-photo-icon:hover .social-button-container {
   opacity: 0.8;
@@ -497,7 +498,7 @@ input:focus {
 
 @media screen and (max-width: 1350px) {
   .home-landing {
-    background-position-y: 50px;
+    background-position-y: 200px;
   }
 }
 @media screen and (max-width: 750px) {

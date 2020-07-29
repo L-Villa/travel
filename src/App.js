@@ -2,9 +2,9 @@ import React from "react";
 import "./App.css";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import NewYork from "./pages/NewYork";
 import California from "./pages/California";
-// import Italy from "./pages/Italy";
 import Italy from "./pages/Italy";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -17,6 +17,7 @@ function App() {
         <Switch>
           {/* <Home /> */}
           <Route path="/" exact component={Home} />
+          <Route path="/about" exact component={About} />
           <Route path="/newyork" exact component={NewYork} />
           <Route path="/california" exact component={California} />
           <Route path="/italy" exact component={Italy} />

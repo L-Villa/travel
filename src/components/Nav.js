@@ -20,8 +20,8 @@ export default function Nav() {
             <Link to="/about">
               <div className="nav-link">About</div>
             </Link>
-            <Link to="/news">
-              <div className="nav-link">News</div>
+            <Link to="/how">
+              <div className="nav-link">How It Works</div>
             </Link>
             <a href="#contact">
               <div className="nav-link">Contact</div>
@@ -50,9 +50,9 @@ export default function Nav() {
                 About
               </div>
             </Link>
-            <Link to="/news">
+            <Link to="/how">
               <div className="menu-link" onClick={handleClick}>
-                News
+                How It Works
               </div>
             </Link>
             {/* <Link to="#contact"> */}

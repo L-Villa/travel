@@ -87,6 +87,7 @@ header a:hover {
   width: 1px;
   margin: 4rem;
   padding: 1rem;
+  white-space: nowrap;
 }
 
 .menu-link {

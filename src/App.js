@@ -3,6 +3,7 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import NewYork from "./pages/NewYork";
 import California from "./pages/California";
 import Italy from "./pages/Italy";
@@ -18,6 +19,7 @@ function App() {
           {/* <Home /> */}
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
+          <Route path="/contact" exact component={Contact} />
           <Route path="/newyork" exact component={NewYork} />
           <Route path="/california" exact component={California} />
           <Route path="/italy" exact component={Italy} />

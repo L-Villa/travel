@@ -13,8 +13,8 @@ import portrait4 from "../images/portraits/portrait4.png";
 export default function About() {
   return (
     <div>
-            <section className="image-divider"></section>
-      <section className="text-1-col-2-row">
+      <section className="image-divider"></section>
+      <section className="text-1-col">
         <div className="text-wrapper">
           <h2>Who We Are</h2>
           <p>
@@ -35,6 +35,11 @@ export default function About() {
             numquam cum temporibus dolor odit quia eius praesentium labore!
             Maiores vel iusto non odio rem ipsum quo, dolore amet placeat
             consequatur facere, ducimus porro!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            mollitia voluptate ratione, laborum aspernatur consequatur dolore
+            numquam cum temporibus dolor odit quia eius praesentium labore!
           </p>
         </div>
       </section>

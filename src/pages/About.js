@@ -13,7 +13,7 @@ import portrait4 from "../images/portraits/portrait4.png";
 export default function About() {
   return (
     <div>
-      <section className="info-banner">
+      <section className="info-banner grey-background">
         <div className="info-banner-text-container">
           <h2>Why Choose Us</h2>
           <p>A subheading</p>

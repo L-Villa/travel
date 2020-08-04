@@ -23,7 +23,7 @@ export default function Nav() {
             <Link to="/how">
               <div className="nav-link">How It Works</div>
             </Link>
-            <a href="#contact">
+            <a href="/contact">
               <div className="nav-link">Contact</div>
             </a>
             <div className="hamburger" onClick={handleClick}>
@@ -55,13 +55,26 @@ export default function Nav() {
                 How It Works
               </div>
             </Link>
-            {/* <Link to="#contact"> */}
-            <a href="#contact">
+            <Link to="/contact">
               <div className="menu-link" onClick={handleClick}>
                 Contact
               </div>
-            </a>
-            {/* </Link> */}
+            </Link>
+            <Link to="/newyork">
+              <div className="menu-link" onClick={handleClick}>
+                New York
+              </div>
+            </Link>
+            <Link to="/california">
+              <div className="menu-link" onClick={handleClick}>
+                California
+              </div>
+            </Link>
+            <Link to="/italy">
+              <div className="menu-link" onClick={handleClick}>
+                Italy
+              </div>
+            </Link>
           </div>
         </div>
       </header>

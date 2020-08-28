@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import gsap from "gsap";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import statueOfLibertyFoggy from "../images/newYork/statueOfLibertyFoggy.jpg";
@@ -15,6 +16,32 @@ import portrait3 from "../images/portraits/portrait3.png";
 import portrait4 from "../images/portraits/portrait4.png";
 
 export default function Home() {
+  useEffect(() => {
+    const tl = gsap.timeline();
+
+    tl.to(".home-landing", {
+      duration: 0.3,
+      opacity: 1,
+    })
+      .from(".home-landing", {
+        duration: 1.5,
+        delay: -0.3,
+        y: 700,
+        ease: "ease.out",
+      })
+      .from(".home-landing-text-container", {
+        duration: 1.5,
+        delay: -1.5,
+        y: -800,
+        opacity: -1,
+      })
+      .from(".vertical-text", {
+        duration: 2,
+        delay: -1.5,
+        opacity: -1,
+      });
+  }, []);
+
   return (
     <div>
       <section className="home-landing">

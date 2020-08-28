@@ -1,4 +1,5 @@
 import React from "react";
+import gsap from "gsap";
 import "./App.css";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
@@ -12,6 +13,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+  gsap.to("body", 0, { css: { visibility: "visible" } });
   return (
     <Router>
       <div className="App">

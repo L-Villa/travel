@@ -67,6 +67,7 @@ button:hover {
   transform: translate(-50%, 0);
   font-size: 4rem;
   animation: hover 3s infinite;
+  cursor: pointer;
 }
 @keyframes hover {
   0% {

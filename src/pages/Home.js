@@ -47,9 +47,16 @@ export default function Home() {
             <a href="#">travel@travel.com</a>
           </div>
         </div>
-        <a href="#recent-trips">
-          <div className="scroll-down-indicator">↓</div>
-        </a>
+        <div
+          onClick={() =>
+            document
+              .querySelector(".recent-trips")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+          className="scroll-down-indicator"
+        >
+          ↓
+        </div>
       </section>
       <section className="recent-trips" id="recent-trips">
         <h2>Recent Trips</h2>
@@ -284,15 +291,27 @@ export default function Home() {
             </div>
             <div className="input-container">
               <label htmlFor="what">Phone Number</label>
-              <input type="tel" placeholder="Your Phone Number" required="true" />
+              <input
+                type="tel"
+                placeholder="Your Phone Number"
+                required="true"
+              />
             </div>
             <div className="input-container">
               <label htmlFor="what">Travel Interests</label>
-              <input type="text" placeholder="Your Travel Interests" required="true" />
+              <input
+                type="text"
+                placeholder="Your Travel Interests"
+                required="true"
+              />
             </div>
             <div className="input-container">
               <label htmlFor="what">Number Of Travelers</label>
-              <input type="text" placeholder="How People Will Be Traveling" required="true"/>
+              <input
+                type="text"
+                placeholder="How People Will Be Traveling"
+                required="true"
+              />
             </div>
             <button type="submit">Submit</button>
           </form>
@@ -302,7 +321,7 @@ export default function Home() {
   );
 }
 
-const handleSubmit = e => {
+const handleSubmit = (e) => {
   e.preventDefault();
-  alert('Your message has been sent');
-}
+  alert("Your message has been sent");
+};

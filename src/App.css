@@ -14,9 +14,6 @@
   --color-light-accent: rgb(204, 204, 204);
   --color-dark-accent: rgb(65, 65, 65);
 }
-html {
-  scroll-behavior: smooth;
-}
 
 ::-webkit-scrollbar {
   width: 10px;

@@ -34,7 +34,6 @@
   bottom: 0;
   width: 100%;
   background: var(--color-dark);
-  height: 55%;
   height: 950px;
   height: max(50%, 950px);
 }

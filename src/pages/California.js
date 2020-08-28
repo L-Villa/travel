@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import gsap from "gsap";
 import "./NewYork.css";
 import goldenGateSide from "../images/california/goldenGateSideFoggy.png";
 import beach from "../images/california/beach.png";
@@ -50,6 +51,26 @@ export default function NewYork() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    const tl = gsap.timeline();
+
+    tl.from(".location-name img", {
+      duration: 1.8,
+      y: 1000,
+      ease: "expo.out",
+    })
+      .from(".location-name h2", {
+        duration: 1.8,
+        delay: -1.8,
+        y: -500,
+        ease: "expo.out",
+      })
+      .from(".location-support-info", {
+        duration: 1.8,
+        delay: -1.8,
+        height: 2500,
+        ease: "expo.out",
+      });
   }, []);
 
   const handleMouseOver = (index) => {

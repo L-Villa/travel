@@ -53,11 +53,16 @@ export default function NewYork() {
 
     const tl = gsap.timeline();
 
-    tl.from(".location-name img", {
-      duration: 1.8,
-      y: 1000,
-      ease: "expo.out",
+    tl.to(".location-name", {
+      duration: 0.3,
+      opacity: 1,
     })
+      .from(".location-name img", {
+        duration: 1.8,
+        delay: -0.3,
+        y: 1000,
+        ease: "expo.out",
+      })
       .from(".location-name h2", {
         duration: 1.8,
         delay: -1.8,

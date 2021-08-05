@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import gsap from "gsap";
 import "./NewYork.css";
-import foggyMountain from "../images/italy/foggyMountain.png";
-import italyLong from "../images/italy/italyLong.png";
-import bridgeOfSighs from "../images/italy/bridgeOfSighs.png";
-import colosseum from "../images/italy/colosseum.png";
-import leaningTowerOfPisa from "../images/italy/leaningTowerOfPisa.png";
-import cinqueTerre from "../images/italy/cinqueTerre.png";
-import davidOfMichelangelo from "../images/italy/davidOfMichelangelo.png";
+import foggyMountain from "../images/italy/foggyMountain.jpg";
+import italyLong from "../images/italy/italyLong.jpg";
+import bridgeOfSighs from "../images/italy/bridgeOfSighs.jpg";
+import colosseum from "../images/italy/colosseum.jpg";
+import leaningTowerOfPisa from "../images/italy/leaningTowerOfPisa.jpg";
+import cinqueTerre from "../images/italy/cinqueTerre.jpg";
+import davidOfMichelangelo from "../images/italy/davidOfMichelangelo.jpg";
 
 export default function NewYork() {
   const [state, setState] = useState([

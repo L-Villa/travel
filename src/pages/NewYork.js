@@ -3,10 +3,10 @@ import gsap from "gsap";
 import "./NewYork.css";
 import statueOfLibertyFoggy from "../images/newYork/statueOfLibertyFoggy.jpg";
 import empireStateBuilding from "../images/newYork/empireStateBuilding.jpg";
-import centralPark from "../images/newYork/centralPark.png";
-import statueOfLiberty from "../images/newYork/statueOfLiberty.png";
-import timesSquare from "../images/newYork/timesSquare.png";
-import brooklynBridge from "../images/newYork/brooklynBridge.png";
+import centralPark from "../images/newYork/centralPark.jpg";
+import statueOfLiberty from "../images/newYork/statueOfLiberty.jpg";
+import timesSquare from "../images/newYork/timesSquare.jpg";
+import brooklynBridge from "../images/newYork/brooklynBridge.jpg";
 
 export default function NewYork() {
   const [state, setState] = useState([

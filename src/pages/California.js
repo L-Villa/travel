@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import gsap from "gsap";
 import "./NewYork.css";
-import goldenGateSide from "../images/california/goldenGateSideFoggy.png";
-import beach from "../images/california/beach.png";
-import yosemite from "../images/california/yosemite.png";
-import disneyland from "../images/california/disneyland.png";
-import goldenGate from "../images/california/goldenGate.png";
-import sequoia from "../images/california/sequoia.png";
-import santaMonica from "../images/california/santaMonica.png";
+import goldenGateSide from "../images/california/goldenGateSideFoggy.jpg";
+import beach from "../images/california/beach.jpg";
+import yosemite from "../images/california/yosemite.jpg";
+import disneyland from "../images/california/disneyland.jpg";
+import goldenGate from "../images/california/goldenGate.jpg";
+import sequoia from "../images/california/sequoia.jpg";
+import santaMonica from "../images/california/santaMonica.jpg";
 
 export default function NewYork() {
   const [state, setState] = useState([

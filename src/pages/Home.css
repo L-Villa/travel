@@ -344,7 +344,7 @@ Recent Trips
 }
 
 .image-divider {
-  background: url("../images/forrestMountain.png");
+  background: url("../images/forrestMountain.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -434,7 +434,7 @@ Recent Trips
 }
 
 .contact-banner {
-  background: url("../images/hawaii.png");
+  background: url("../images/hawaii.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;

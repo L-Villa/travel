@@ -56,22 +56,22 @@ export default function Home() {
         </div>
         <div className="vertical-text left-side">
           <div>
-            <a href="#">facebook</a>
+            <a href="/">facebook</a>
           </div>
           <div>
-            <a href="#">instagram</a>
+            <a href="/">instagram</a>
           </div>
           <div>
-            <a href="#">linkedin</a>
+            <a href="/">linkedin</a>
           </div>
         </div>
         <div className="vertical-text right-side">
           <div>
-            <a href="#">123-555-0000</a>
+            <a href="/">123-555-0000</a>
           </div>
           <div>/</div>
           <div>
-            <a href="#">travel@travel.com</a>
+            <a href="/">travel@travel.com</a>
           </div>
         </div>
         <div

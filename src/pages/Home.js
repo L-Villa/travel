@@ -180,11 +180,11 @@ export default function Home() {
         <div className="info-banner-card-container">
           <div className="info-banner-card-photo">
             <div className="card-photo-icon">
-              <img src={portrait4} alt="" />
+              <img loading="lazy" src={portrait4} alt="" />
               <div className="social-button-container">
-                <img src={instagram} alt="instagram" />
-                <img src={linkedin} alt="linkedin" />
-                <img src={facebook} alt="facebook" />
+                <img loading="lazy" src={instagram} alt="instagram" />
+                <img loading="lazy" src={linkedin} alt="linkedin" />
+                <img loading="lazy" src={facebook} alt="facebook" />
               </div>
             </div>
             <h2>John Doe</h2>
@@ -192,11 +192,11 @@ export default function Home() {
           </div>
           <div className="info-banner-card-photo">
             <div className="card-photo-icon">
-              <img src={portrait2} alt="" />
+              <img loading="lazy" src={portrait2} alt="" />
               <div className="social-button-container">
-                <img src={instagram} alt="instagram" />
-                <img src={linkedin} alt="linkedin" />
-                <img src={facebook} alt="facebook" />
+                <img loading="lazy" src={instagram} alt="instagram" />
+                <img loading="lazy" src={linkedin} alt="linkedin" />
+                <img loading="lazy" src={facebook} alt="facebook" />
               </div>
             </div>
             <h2>Doe John</h2>
@@ -204,11 +204,11 @@ export default function Home() {
           </div>
           <div className="info-banner-card-photo">
             <div className="card-photo-icon">
-              <img src={portrait3} alt="" />
+              <img loading="lazy" src={portrait3} alt="" />
               <div className="social-button-container">
-                <img src={instagram} alt="instagram" />
-                <img src={linkedin} alt="linkedin" />
-                <img src={facebook} alt="facebook" />
+                <img loading="lazy" src={instagram} alt="instagram" />
+                <img loading="lazy" src={linkedin} alt="linkedin" />
+                <img loading="lazy" src={facebook} alt="facebook" />
               </div>
             </div>
             <h2>Jane Doe</h2>

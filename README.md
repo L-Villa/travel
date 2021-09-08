@@ -1,6 +1,6 @@
 # Travel Agency
 
-This website was designed for a mock travel agency. The goal of this project was to practice ReactJS and bringing a website from design to deployment. All animations and interactions were created using GSAP. This project has a [demo](https://luisvilla.xyz/projects/travel/demo) on my personal website.
+This website was designed for a mock travel agency. The goal of this project was to practice bringing a website from design to deployment while leveraging ReactJS. All animations and interactions were created using GSAP. This project has a [demo](https://luisvilla.xyz/projects/travel/demo) on my personal website.
 
 Visit my [personal website](https://luisvilla.xyz) if you'd like to see more of my projects.
 

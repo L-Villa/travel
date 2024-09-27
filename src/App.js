@@ -15,7 +15,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   gsap.to("body", 0, { css: { visibility: "visible" } });
   return (
-    <Router basename="projects/travel/demo">
+    <Router basename="/">
       <div className="App">
         <Nav />
         <Switch>
